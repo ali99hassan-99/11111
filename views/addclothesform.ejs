@@ -1,0 +1,39 @@
+<%- include("partials/header") %>
+
+<div class="container">
+	<div class="d-flex justify-content-center pt-5 m-3">
+		<form method="POST" class="border border-danger rounded bg-light text-dark p-5">
+			<h1 class="text-center">You can add clothes from here</h1>
+			<div class="form-group">
+				<label>Enter URL</label>
+				<input type="text" class="form-control" name="url">
+			</div>
+			<div class="form-group">
+				<label>Enter Name</label>
+				<input type="text" class="form-control" name="name">
+			</div>
+			<div class="form-group">
+				<label>Enter heading</label>
+				<input type="text" class="form-control" name="head">
+			</div>
+			<div class="form-group">
+				<label>Enter Disc</label>
+				<input type="text" class="form-control" name="disc">
+			</div>
+			<div class="form-group">
+				<label>Enter Price</label>
+				<input type="number" class="form-control" name="price">
+			</div>
+			<!-- <div class="form-group">
+				<label>Size</label>
+				<input type="text" class="form-control" name="size">
+			</div> -->
+			<div class="form-group text-center">
+				<input type="submit" class="btn btn-success">
+			</div>
+		</form>
+	</div>
+</div>
+
+
+<%- include("partials/footer") %>

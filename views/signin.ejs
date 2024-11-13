@@ -1,0 +1,29 @@
+<%- include("partials/header") %>
+<!-- Form starts -->
+
+
+<div class="container">
+    <div class="d-flex justify-content-center pt-5">
+        <form method="POST" class=" border border-danger rounded bg-light text-dark p-5 ">
+            <h1 class="text-center">Sign in</h1>
+            <div class="form-group">
+                <label>Email address</label>
+                <input type="email" name="username" placeholder="Enter your E-mail Id" class="form-control" aria-describedby="emailHelp" required autofocus>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Enter your Password" class="form-control" id="exampleInputPassword1" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </div>
+            <div class="mt-4 text-center">
+                <p>Don't have an account? <a href="signup">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Form end -->
+<%- include("partials/footer") %>

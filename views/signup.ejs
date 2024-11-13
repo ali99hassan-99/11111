@@ -1,0 +1,32 @@
+<%- include("partials/header") %>
+
+<!-- Form starts -->
+
+<div class="container">
+    <div class="d-flex justify-content-center pt-5">
+        <form method="POST" class="border border-danger rounded bg-light text-dark p-5 ">
+            <h1 class="text-center">Sign up</h1>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name" class="form-control" placeholder="Enter your full name" required autofocus>
+            </div>
+            <div class="form-group">
+                <label>Email address</label>
+                <input type="email" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter E-mail address" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" class="form-control" minlength="5" id="exampleInputPassword1" placeholder="Atleast one uppercase letter and number." required>
+                <small class="form-text text-muted">We'll never share your confidential information with anyone else.</small>
+            </div class="form-group">
+            <div class="mt-4 text-center">
+                <button type="submit" class="btn btn-primary">Sign up</button>
+                <p>Already have an account? <a href="signin">Sign In</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Form end -->
+<%- include("partials/footer") %>

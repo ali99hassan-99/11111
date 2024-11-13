@@ -1,0 +1,56 @@
+<%- include("partials/header") %>
+<!-- Form Starts -->
+
+<div class="container text-dark text-center p-5">
+  <div class="d-flex justify-content-center">
+    <form
+      method="POST"
+      class="border border-danger rounded bg-light text-dark p-5"
+    >
+      <div class="form-group">
+        <label>Select Garment</label>
+        <select class="form-control" name="garment">
+          <option>Formal Shirt</option>
+          <option>Formal Pant</option>
+          <option>Kurta's</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Select Size</label>
+        <select class="form-control" name="size">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>XXL</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Select Clothe</label>
+        <select class="form-control" name="clothe">
+          <option>Cotton</option>
+          <option>Denim</option>
+          <option>Linen</option>
+          <option>Silk</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Additional Intructions</label>
+        <textarea class="form-control" rows="5" name="addinfo"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Enter Address</label>
+        <textarea
+          class="form-control"
+          rows="3"
+          name="address"
+          required
+        ></textarea>
+      </div>
+      <button class="btn btn-success">Confirm</button>
+    </form>
+  </div>
+</div>
+
+<!-- Form Ends -->
+<%- include("partials/footer") %>

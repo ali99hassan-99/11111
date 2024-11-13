@@ -1,0 +1,63 @@
+<%- include("partials/header") %>
+<!-- RECEIPT PAGE STARTS -->
+
+<div id="float1" class="w-25">
+    <div class="mx-auto h-50 w-50">
+        <img src=" <%- Mens.url %> " class="receipt">
+        <h4><%- Mens.name %></h4>
+    </div>
+</div>
+
+<div id="float2" class="mr-3 w-50">
+    <form method="POST">
+        <div class="form-group">
+            <h1> <%- Mens.head %> </h1>
+            <h4><%- Mens.name %></h4>
+            <p><%- Mens.disc %></p>
+            <p><strong>RS:<%- Mens.price %></strong></p>    
+            <label>Select size</label>
+            <select name="size">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+            <label>Select Quantity</label>
+            <select name="quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <small class="form-text text-muted">You can only select upto 5 Items.</small>
+        </div>
+        <p><strong>WE ONLY ACCEPT COD PAYMENT.</strong></p>
+        <div class="container">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Product Price</th>
+                        <th scope="col">Final Payble Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><%- Mens.name %></td>
+                        <td><%- Mens.price %></td>
+                        <td><%- Mens.price %></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="form-group">
+            <label>Enter Delivery Address</label>
+            <textarea name="address" class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+        </div>
+        <div class="text-center">
+            <input type="submit" class="btn btn-success btn-lg" value="Proceed">
+        </div>
+    </form>
+</div>
+
+<%- include("partials/footer") %>

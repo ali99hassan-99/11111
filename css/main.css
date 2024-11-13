@@ -1,0 +1,54 @@
+body{
+    padding-top: 60px;
+	z-index: 0;
+	background-color: #D6D1F2;
+}
+
+.jumbotron{
+    padding: 70px 30px 70px 30px;
+	margin-bottom: 10px;
+	background-color: #9F93E6;
+}
+
+.container-fluid{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.navbar-dark{
+    background-color: #512DA8;
+}
+
+#float1{
+	float: left;
+}
+
+#float2{
+	float: right;
+}
+
+.newCard {
+	height: 400px;
+	object-fit: cover;	
+}
+
+.cardBtn{
+	position: absolute;
+	bottom: 1rem;
+	margin-left: 3rem;
+}
+
+.cardHeight{
+	height: 560px;
+	overflow: hidden;
+
+}
+
+.form-control{
+	display: inline-block;
+}
+
+.receipt{
+	height: 550px;
+	width: 300px;
+}

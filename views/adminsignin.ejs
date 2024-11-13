@@ -1,0 +1,26 @@
+<%- include("partials/header") %>
+<!-- Form starts -->
+
+
+<div class="container">
+    <div class="d-flex justify-content-center pt-5">
+        <form method="POST" class="border border-warning rounded bg-light text-dark p-5">
+            <h1 class="text-center">Admin Sign In</h1>
+                <div class="form-group">
+                    <label>Admin Username</label>
+                    <input type="text" name="username" class="form-control" aria-describedby="emailHelp" required autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Admin Password</label>
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" required>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Form end -->
+<%- include("partials/footer") %>
